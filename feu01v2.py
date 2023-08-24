@@ -1,5 +1,6 @@
 import sys
 
+# fonctions utilisées
 def calculate_expression(expression):
   tokens = tokenize(expression)
   postfix = infix_to_postfix(tokens)
@@ -61,12 +62,13 @@ def evaluate_postfix(postfix):
       operand_stack.append(result)
   return operand_stack.pop()
 
+# Partie 1 : Gestion d'erreur
 
-
-
-
+# Partie 2 : Parsing
 expression = sys.argv[1]
 
+# Partie 3 : Résolution
 result = calculate_expression(expression)
 
+# Partie 4 : Affichage
 print(result)
