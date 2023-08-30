@@ -39,7 +39,7 @@ def evaluate(expression):
   operator_stack = []
   sign = ["+", "-", "*", "/", "(", ")"]
   for element in expression:
-    if element.isdigit():
+  if element.isdigit():
       postfix.append(element)
     if element in sign:
       print(f"element = {element} | south = \t{operator_stack}")
